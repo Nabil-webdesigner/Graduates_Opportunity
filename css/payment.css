@@ -110,8 +110,8 @@
 
 /*************************************/
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 640px) { 
     .submit-btn {
-        padding: 15px 25px;
+        padding: 15px 30px;
     }
 }
