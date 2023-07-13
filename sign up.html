@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page - Graduates Opportunities</title>
+    <link rel="stylesheet" href="css/sign up.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/go.png">
+</head>
+<body style="background-image: url(Assets/images/bg-texture.png);">
+  <div class="wrapper">
+    <h2>Graduate Registration</h2>
+
+    <form action="https://formspree.io/f/xwkdkwnq" method="post">
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Name" name="Name" required>
+      </div>
+
+      <div class="input-box">
+        <input type="email" placeholder="Enter your Email" name="Email" required>
+      </div>
+
+      <div class="input-box">
+        <input type="tel" placeholder="Enter your Phone Number" name="Phone-Number" required minlength="0" maxlength="11" onkeyup="NumbersOnly(this)">
+      </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="Enter your University" name="University" required>
+        </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="Enter your College" name="College" required>
+        </div>
+
+        <div class="input-box">
+            <input type="text" placeholder="Enter your Position" name="Position" required>
+        </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="Enter your GPA" name="GPA" required>
+        </div>
+
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I Accept All Terms & Condition</h3>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" value="Register Now">
+      </div>
+    </form>
+
+    <div class="login">
+      <h3>Already have an account ? <a href="login.html">Login now</a></h3>
+    </div>
+  </div>
+
+    <script src="main.js"></script>
+    <script>
+        function NumbersOnly(input) {
+          var regex = /[^0-9]/gi;
+          input.value = input.value.replace(regex, "");
+        }
+      </script>
+
+</body>
+</html>

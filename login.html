@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page - Graduates Opportunities</title>
+    <link rel="stylesheet" href="css/sign up.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/go.png">
+</head>
+<body style="background-image: url(Assets/images/bg-texture.png);">
+  <div class="wrapper">
+    <h2>Graduate Login</h2>
+
+    <form action="https://formspree.io/f/mjvqvpej" method="post">
+      <div class="input-box">
+        <input type="email" placeholder="Enter your Email" name="Email" required>
+      </div>
+
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Id" name="Id" required>
+      </div>
+
+      <div class="input-box button" style="margin-top: 30px;">
+        <input type="Submit" value="Login Now">
+      </div>
+    </form>
+
+    <div class="login">
+      <h3>Not a member ? <a href="sign up.html">Signup now</a></h3>
+    </div>
+  </div>
+
+    <script src="main.js"></script>
+    <script>
+        function NumbersOnly(input) {
+          var regex = /[^0-9]/gi;
+          input.value = input.value.replace(regex, "");
+        }
+      </script>
+
+</body>
+</html>

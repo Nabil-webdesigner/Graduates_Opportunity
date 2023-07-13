@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1f2641;
+    height: auto;
+  }
+
+/*************************************/
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    min-height: 100vh;
+}
+
+.container-form form {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.container-form form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: left;
+}
+
+.container-form form .row .col {
+    flex:1 1 250px;
+}
+
+.container-form form .row .col .title {
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container-form form .row .col .inputBox {
+    margin: 15px 0;
+}
+
+.container-form form .row .col .inputBox span {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container-form form .row .col .inputBox input {
+    width: 95%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container-form form .row .col .inputBox input:focus{
+     border-color: #424890;
+}
+
+.container-form form .row .col .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.container-form form .row .col .flex .inputBox {
+    margin-top: 5px;
+}
+
+.container-form form .row .col .inputBox img {
+    height: 34px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.submit-btn {
+    max-width: 100%;
+    display: inline-block;
+    background: #f75842;
+    color: #fff;
+    padding: 15px 40px;
+    margin: 10px auto 0;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+}
+
+.submit-btn:hover {
+    background: #563434;
+}
+
+/*************************************/
+
+@media screen and (max-width: 600px) { 
+    .submit-btn {
+        padding: 15px 25px;
+    }
+}
